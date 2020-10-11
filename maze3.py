@@ -6,7 +6,7 @@ from tkinter import *
 import tkinter.messagebox as tkMessageBox
 import sqlite3
 # Global Settings
-SHOW_DRAW = True# Show the maze being created
+SHOW_DRAW = False# Show the maze being created
 SHOW_FPS = False  # Show frames per second in caption
 SCREEN_WIDTH = 720
 SCREEN_HEIGHT = 480
