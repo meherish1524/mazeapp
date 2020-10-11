@@ -6,7 +6,7 @@ from tkinter import *
 import tkinter.messagebox as tkMessageBox
 import sqlite3
 # Global Settings
-SHOW_DRAW = False# Show the maze being created
+SHOW_DRAW = True# Show the maze being created
 SHOW_FPS = False  # Show frames per second in caption
 SCREEN_WIDTH = 720
 SCREEN_HEIGHT = 480
@@ -519,7 +519,7 @@ def Login():
         if cursor.fetchone() is not None:
             lbl_result1.config(text="You Successfully Login", fg="blue")
             root.destroy()
-            r=random.randint(1,5)
+            r=2
             pg.init()
             if(r==1):
                 pg.mixer.music.load('maze1.mp3')
